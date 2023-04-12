@@ -1,0 +1,304 @@
+body {
+    background-color: rgb(254, 248, 243);
+    color: white;
+    height: 5000px;
+    font-family: 'Jost', sans-serif;
+}
+
+h1, h2 {
+    color: rgb(223, 100, 70);
+    font-weight: 700;
+}
+
+a {
+    color: rgb(31, 43, 83);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.navbar-secion {
+    background-color: rgb(254, 248, 243);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    color: rgb(223, 100, 70);
+    font-size: 2rem;
+    margin-left: 30px;
+}
+
+.navbar-brand:hover {
+    color: rgb(223, 100, 70);
+}
+
+.nav-item {
+    margin-left: 15px;
+}
+
+.navbar-toggler {
+    margin-right: 15px;
+    border: none;
+}
+
+.toggler {
+    font-size: 2rem;
+    color: rgb(223, 100, 70);
+}
+
+.get-started {
+    margin-right: 15px;
+
+}
+
+.get-started:hover {
+    background-color: rgb(223, 100, 70);
+    color: rgb(254, 248, 243);
+    border-color: rgb(223, 100, 70);
+}
+
+.login {
+    border: none;
+}
+
+.login:hover {
+    background-color: rgb(223, 100, 70);
+    color: rgb(254, 248, 243);
+    border-color: rgb(223, 100, 70);
+}
+
+.nav-item button {
+    background-color: rgb(254, 248, 243);
+    font-weight: 500;
+    color: rgb(223, 100, 70);
+    border-color: rgb(223, 100, 70);
+    border-radius: 20px;
+}
+
+/* Title Section */
+
+.title-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 200px auto;
+}
+
+.headline {
+    max-width: 650px;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.top-heading {
+    color: rgb(31, 43, 83);
+}
+
+.title-cta {
+    font-size: 1.5rem;
+    color: rgb(31, 43, 83);
+    margin: 35px 0 ;
+}
+
+.input-wrapper {
+    width: 20rem;
+    display: inline-block;
+    position: relative;
+}
+
+.email-input {
+    width: 20rem;
+    padding: 2% 13%;
+    background-color: rgb(254, 248, 243);
+    border: 1px solid rgb(31, 43, 83);
+    border-radius: 18px;
+    color: rgb(31, 43, 83);
+    font-weight: 500;
+
+}
+
+.input-img {
+    position: absolute;
+    left: 15px;
+    top: 10px;
+    
+}
+
+.sign-up-btn {
+    
+    color: rgb(31, 43, 83);
+    border: 1px solid rgb(31,43,83);
+    border-radius: 20px;
+    background-color: rgb(253, 241, 229);
+    padding: 6px 22px;
+    margin-left: 10px;
+}
+
+.sign-up-btn:hover {
+    background-color: rgb(31, 43, 83);
+    color: white;
+    border-color: rgb(31, 43, 83);
+}
+
+/* Featured Section */
+
+.featured-header {
+    background-color: rgb(254, 248, 243);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+}
+
+.featured-headline {
+    margin-left: 5%;
+}
+
+.featured-cta {
+    text-decoration: none;
+    margin-right: 5%;
+
+}
+
+.plans {
+    margin: 2% 3%;  
+}
+
+.plan {
+    height: 275px;
+    width: 300px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    color: rgb(31, 43, 83);
+}
+
+.plan-header {
+    margin: 15px 0px 15px 0px;
+}
+
+hr {
+    color: rgb(223, 100, 70);
+}
+
+.tag {
+    color: rgb(119, 118, 118);
+}
+
+.plan-headline {   
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.plan-summary {
+    font-weight: 500;
+}
+
+.plan-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin: 15px 15px 0 25px;
+}
+
+.plan-footer-left {
+    margin-top: 20px;
+}
+
+.plan-interest {
+    color: rgb(223, 100, 70);
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.plan-button {
+    text-align: right;
+}
+
+#plan-two {
+    background-color: rgb(247, 211, 200,.9);
+
+}
+
+#plan-three {
+    background-color: rgb(239, 174, 157);
+}
+
+#plan-four {
+    background-color: rgb(231, 137, 114);
+}
+
+/* About Us Section */
+
+.about-us {
+    text-align: center;   
+}
+.about-us h1 {
+    color: rgb(31, 43, 83);
+    font-size: 1.5rem;
+}
+
+.about-us img{
+    height: 30px;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+
+/* What we do section */
+
+.what-we-do {
+    overflow: visible;
+    margin: 10% 0;
+    padding: 5% 10% 15% 10%;
+    width: 100svw;
+    height: fit-content;
+    background-color: white;
+    color: rgb(31, 43, 83);
+    text-align: center;
+    position: relative;
+    clip-path: polygon(25% 0%, 100% 1%, 100% 63%, 100% 75%, 0 100%, 0 0);
+    z-index: 1;
+}
+
+@media screen and (max-width: 990px) {
+    .what-we-do {
+        padding: 5% 10% 30% 10%;
+    }
+}
+
+@media screen and (max-width: 686px) {
+    .what-we-do {
+        clip-path: none;
+        padding: 5% 10% 10% 10%;
+
+    }
+}
+
+.what-heading {
+    padding-bottom: 10%;
+}
+
+.what {
+    color: rgb(31, 43, 83)  ;
+}
+
+.reasons {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.image-caption {
+    padding-top: 20px;
+    font-size: 2rem;
+    font-weight: 500;
+
+}
+
+.what-image {
+    margin-top: 20px;
+}
+.what-explanation {
+    vertical-align: top;
+}
