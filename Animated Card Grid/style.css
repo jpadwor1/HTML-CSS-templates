@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    display: grid;
+    background-color: rgb(182, 179, 179);
+    place-items: center;
+    min-height: 100vh;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(235, 20, 20);
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(45ch, 1fr));
+    gap: 30px;
+    
+}
+
+.card {
+    background-image: url(images/hunter-so-9UXhyIpqkX8-unsplash\ \(1\).jpg);
+    background-size: cover;
+    color: white;
+    max-width: 45ch;
+    padding: 10rem 0 0;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 500ms ease;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+
+.card-content {
+    --padding: 2em;
+    padding: var(--padding);
+    text-align: left;
+    background: linear-gradient(hsl(0 0% 0% / 0),
+     hsl(0 0% 0% / .8), hsl(0 0% 0% / 1));
+     transform: translateY(185px);
+     transition: transform 500ms ease;
+     transition-delay: 500ms;
+}
+
+.card:hover .card-content {
+    transform: translateX(0);
+}
+.card-title {
+    position: relative;
+    font-size: 1.5rem;
+    width: max-content;
+
+}
+
+.card-title::after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: calc(100% + var(--padding));
+    background-color: deepskyblue;
+    bottom: 0;
+    left: calc(var(--padding) * -1);
+    transform: scaleX(0);
+    transition: transform 500ms ease;
+    transform-origin: left;
+
+}
+
+.card:hover .card-title::after {
+    transform: scaleX(1);
+}
+
+.card-body {
+    padding: .5em;
+
+}
+
+.button {
+    cursor: pointer;
+    display: inline-block;
+    color: black;
+    background-color: deepskyblue;
+    padding: .5em 1.25em;
+    border-radius: .25em;
+}
+
+.button:hover, .button:focus {
+    background-color: white;
+}
