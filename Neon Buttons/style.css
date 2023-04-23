@@ -1,0 +1,25 @@
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+
+}
+
+.button1 {
+    padding: 9px 16px;
+    border-radius: 2em;
+    border: none;
+    background: none;
+    box-shadow: 0 0 5px #39B5E0;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #39B5E0;
+    transition: color 150ms ease, background-color 350ms ease;
+    
+}
+
+.button1:hover {
+    background-color: #39B5E0;
+    color: #fff;
+    box-shadow: 0 0 40px #3cc1ed;
+}

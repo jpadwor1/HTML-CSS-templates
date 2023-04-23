@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-color: rgb(220, 220, 220);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.progress-container {
+    height: 160px;
+    width: 160px;
+    position: relative;
+}
+
+.outer {
+    padding: 20px;
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    box-shadow: 6px 6px 8px -1px rgba(0, 0, 0, 0.25),
+    -6px -6px 8px -1px rgba(255, 255, 255, 0.8);
+}
+
+.inner {
+    margin: 0;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.25),
+    inset -4px -4px 6px -1px rgba(255, 255, 255, 0.25),
+    -0.5px -0.5px 0 rgb(255, 255, 255),
+    0.5px 0.5px 0 rgba(0, 0, 0, 0.15),
+    0 12px 10px -10px rgba(0, 0, 0, 0.05);
+}
+
+#number {
+    font-weight: 500;
+
+}
+
+circle {
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+    animation: animate 3s linear forwards;
+}
+
+@keyframes animate {
+    100%{
+        stroke-dashoffset: 44;
+    }
+}
+
+.progress-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+

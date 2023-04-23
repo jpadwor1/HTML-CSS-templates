@@ -1,0 +1,84 @@
+body {
+    background-color: #000;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    color: #fff;
+    line-height: 1.6;
+}
+
+h1, h2 {
+    display: inline-block;
+    font-family: sans-serif;
+    margin-left: 15px;
+}
+
+h1 {
+    margin-top: 50px;
+    font-size: 1.7em;
+    
+}
+
+h2 {
+    font-size: 1.25em;
+    
+}
+
+.card {
+    aspect-ratio: 5/ 7;
+    width: 40%;
+    border: 1px solid aquamarine;
+    position: relative;
+}
+
+.card:before {
+    background: #1a2a6c;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(130deg, transparent 0% 33%,  #fdbb2d 66%, #b21f1f 83%, #1a2a6c 100%);
+    background: linear-gradient(130deg, transparent 0% 33%,  #fdbb2d 66%, #b21f1f 83%, #1a2a6c 100%); 
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-position: 0% 0%;
+    background-size: 300% 300%;
+    transition: transform 350ms ease, background-position 350ms ease;
+    z-index: 1;
+}
+
+.card:hover:before {
+    background-position: 100% 100%;
+    transform: scale(1.1, 1.05);
+}
+
+.card-content {
+    background-image: radial-gradient(
+        rgba(255, 255, 255, 0.2) 8%, 
+        transparent 8%
+      );
+      background-position: 0% 0%;
+      background-size: 5vmin 5vmin;
+      height: calc(100% - 10vmin);
+      padding: 5vmin;
+      position: relative;
+      transition: background-position 350ms ease;
+      width: calc(100% - 10vmin);
+      z-index: 2;
+}
+
+.card:hover .card-content {
+    background-position: -10% 0;
+}
+
+.card-subtitle {
+    scale: 0;
+    transform-origin: left;
+    transition: scale 300ms ease-in-out;
+}
+
+.card:hover .card-subtitle {
+    scale: 1;
+
+
+    
+}
